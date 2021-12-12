@@ -4,18 +4,16 @@ import Navbar from '../components/nav/navbar'
 import SectionCard from '../components/sectionCard/sectionCard'
 import { getAllVideos, getPopularVideos, getVideos } from '../lib/videos'
 import styles from '../styles/Home.module.css'
-import { magic } from '../lib/magic-client'
-import { useState, useEffect } from 'react'
 
 export async function getServerSideProps() {
-  // const disneyVideos = await getVideos("disney trailers")
-  const disneyVideos = await getAllVideos()
-  // const productivityVideos = await getVideos("productivity")
-  const productivityVideos = await getAllVideos()
-  // const travelVideos = await getVideos("travel")
-  const travelVideos = await getAllVideos()
-  // const popularVideos = await getPopularVideos()
-  const popularVideos = await getAllVideos()
+  const disneyVideos = await getVideos("disney trailers")
+  // const disneyVideos = await getAllVideos()
+  const productivityVideos = await getVideos("productivity")
+  // const productivityVideos = await getAllVideos()
+  const travelVideos = await getVideos("travel")
+  // const travelVideos = await getAllVideos()
+  const popularVideos = await getPopularVideos()
+  // const popularVideos = await getAllVideos()
 
   return {
     props: {disneyVideos, productivityVideos, travelVideos, popularVideos}

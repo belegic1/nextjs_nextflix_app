@@ -9,12 +9,12 @@ import Navbar from "../../components/nav/navbar"
 
 export async function getStaticProps(context) {
     const videoId = context.params.videoId;
-    // const videoArray = await getYoutubeVideoById(videoId);
-    const video =  getRequestedVideo(videoId)
+    const videoArray = await getYoutubeVideoById(videoId);
+    // const video =  getRequestedVideo(videoId)
     return {
         props: {
-            // theVideo: videoArray.length > 0 ? videoArray[0] : {},
-            theVideo: video? video : {}
+            theVideo: videoArray.length > 0 ? videoArray[0] : {},
+            // theVideo: video? video : {}
         },
         revalidate: 10, // In seconds
     };
