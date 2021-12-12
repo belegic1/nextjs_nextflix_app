@@ -1,0 +1,85 @@
+.container {
+    color: white;
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(to bottom, var(--gradient stops));
+
+    --gradient-from: black;
+    --gradient-stops: var(var(--gradient-from), var(--gradient-to, rgba(0,0,0,0)));
+    width: 100%;
+    z-index: 50;
+
+}
+
+.wrapper{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    padding: 1.25rem;
+}
+.logoLink{
+    display: flex;
+    font-weight: 500;
+    font-size: 1rem;
+    align-items: center;
+    color: aliceblue;
+    margin-bottom: 1rem;
+}
+.logoWrapper{
+    color: red;
+    width: 8rem;
+}
+
+.navItems{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-left: 1.25rem;
+    font-size: .875rem;
+    font-size: 1rem;
+
+    line-height: 1.25rem;
+    list-style: none;
+}
+.navItem{
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: .75rem;
+}
+.navItem2{
+    cursor: pointer;
+
+}
+.navContainer{
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+}
+
+.usernameBtn{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+}
+
+.username{
+    font-size: 1rem;
+
+}
+.navDropdown{
+    position: absolute;
+    margin-left: auto;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: rgb(32, 29, 29);
+    border-width: 1px;
+    color: white;
+    border-radius: .25rem;
+    border-color: blue;
+    box-shadow: var(--shadow30,0 0 #0000), var(--ring-shadow, 0 0 #0000),
+    var(--shadow30);
+}

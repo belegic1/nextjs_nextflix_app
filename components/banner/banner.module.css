@@ -1,0 +1,113 @@
+.container{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.leftWrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.left{
+    display: flex;
+    justify-content: start-flex;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+.nseriesWrapper{
+    display: flex;
+}
+
+.firstLetter{
+    font-size: 3.75rem;
+    line-height: 1;
+    color: rgba(255, 0, 0, 0.74);
+    font-weight: 800;
+}
+
+.series{
+    font-size: .875rem;
+    color: rgba(255, 255, 255, 0.938);
+
+}
+
+.title{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 800;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+.subtitle{
+    font-size: 1.125rem;
+    line-height: 1,75rem;
+    color: white;
+    -webkit-text-stroke: 1px gray;
+
+
+}
+
+.playBtnWrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.playText{
+    color: rgb(31,41,55);
+    font-weight: 600;
+    font-style: 1.125rem;
+    line-height: 1.75rem;
+    padding-left: 0.25rem;
+    text-align: center;
+}
+
+
+
+.bannerImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    bottom: 0;
+    --tw-gradient-stops: var(--tw-gradient-from),
+    var(var(--tw-gradient-to, rgba(0,0,0,0));
+    background-image: linear-gradient(to top, var(--tw-gradient-stops)));
+    --tw-gradient-from: black;
+    
+}
+
+.btnWithIcon{
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: .3rem 1rem .3rem 1rem;
+
+}
+
+
+@media(min-width: 1024px){
+    .header{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .title{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .playText {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}
